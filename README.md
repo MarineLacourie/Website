@@ -1,2 +1,2 @@
 # wedding
-Website for our weeding
+Website for our wedding
