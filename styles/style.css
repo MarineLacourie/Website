@@ -1,0 +1,60 @@
+html {
+	height: 100%;
+	font-size: 14px;
+	font-family: arial;
+}
+
+body {
+	height: 100%;
+	background-color: whitesmoke;
+}
+
+menu {
+	height: 2.5rem;
+	background-color: black;
+	text-align: center;
+	position: fixed;
+    width: 100%;	
+}
+
+menu > a {
+    display: inline-block;
+    height: 100%;
+    line-height: 2.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+menu > a:hover {
+    color: lime;
+}
+
+section {
+	padding: 1rem;
+}
+
+#home {
+	background-color: red;
+	height:30rem;
+	padding-top: 3.5rem;
+}
+
+#agenda {
+	background-color: green;
+	height:20rem;
+}
+
+#location {
+	background-color: yellow;
+}
+
+#accommodation {
+	background-color: pink;
+	height:20rem;
+}
+
+#contacts {
+	background-color: orange;
+}
