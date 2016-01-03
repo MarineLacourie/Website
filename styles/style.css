@@ -1,20 +1,21 @@
 html {
 	height: 100%;
 	font-size: 14px;
-	font-family: arial;
+	font-family: calibri;
 }
 
 body {
 	height: 100%;
-	background-color: whitesmoke;
+	background-color: #f9fbfa;
 }
 
 menu {
 	height: 2.5rem;
-	background-color: black;
+	background-color: #99cbba;
 	text-align: center;
 	position: fixed;
-    width: 100%;	
+    width: 100%;
+    font-weight: bold;	
 }
 
 menu > a {
@@ -28,33 +29,52 @@ menu > a {
 }
 
 menu > a:hover {
-    color: lime;
+    color: #e46c59;
+}
+
+#home {
+	padding-top: 3.5rem;
+}
+
+#agenda, #location, #accommodation, #transportation {
+	display: none;
 }
 
 section {
 	padding: 1rem;
 }
 
-#home {
-	background-color: red;
-	height:30rem;
-	padding-top: 3.5rem;
+section:nth-child(odd) {
+	background-color: #d7d0c4;
 }
 
-#agenda {
-	background-color: green;
-	height:20rem;
+section:nth-child(even) {
+	background-color: whitesmoke;
 }
 
-#location {
-	background-color: yellow;
+section > h1 {
+    font-weight: bold;
+    font-size: xx-large;
+    color: #fac778;
 }
 
-#accommodation {
-	background-color: pink;
-	height:20rem;
+section > header {
+	margin: 2rem;
+	color: #e46c59;
 }
 
-#contacts {
-	background-color: orange;
+section h2 {
+    font-weight: bold;
+    font-size: xx-large;
+    text-align: center;
+}
+
+section h3 {
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+}
+
+p {
+	text: left;
 }
