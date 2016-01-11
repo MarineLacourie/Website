@@ -53,6 +53,10 @@ section:nth-child(odd) {
 	background-color: #d7d0c4;
 }
 
+section:nth-child(odd) h1 {
+	color: #e46c59;
+}
+
 section:nth-child(even) {
 	background-color: whitesmoke;
 }
