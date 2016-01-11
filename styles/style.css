@@ -1,12 +1,16 @@
 html {
-	height: 100%;
+	min-height: 100%;
 	font-size: 14px;
 	font-family: calibri;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth; // Added in from answer from Felix
+    overflow-x: scroll;
 }
 
 body {
-	height: 100%;
+	min-height: 100%;
 	background-color: #f9fbfa;
+    transition-duration: 0.2s;
 }
 
 menu {
@@ -18,7 +22,11 @@ menu {
     font-weight: bold;	
 }
 
-menu > a {
+menu li {
+	display: inline-block;
+}
+
+menu a {
     display: inline-block;
     height: 100%;
     line-height: 2.5rem;
@@ -28,7 +36,7 @@ menu > a {
     color: white;
 }
 
-menu > a:hover {
+menu a:hover {
     color: #e46c59;
 }
 
@@ -36,12 +44,9 @@ menu > a:hover {
 	padding-top: 3.5rem;
 }
 
-#agenda, #location, #accommodation, #transportation {
-	display: none;
-}
-
 section {
 	padding: 1rem;
+    transition-duration: 0.2s;
 }
 
 section:nth-child(odd) {
@@ -77,4 +82,42 @@ section h3 {
 
 p {
 	text: left;
+}
+
+@media (max-width: 600px) {
+	menu {
+		position: fixed;
+		height:100%;
+		text-align: left;
+		width: 100%;
+		background-color: transparent;
+	}
+
+	menu > ul {
+		display: inline-block;
+		width: 9rem;
+		background-color: #99cbba;
+		text-align: left;
+		height: 100%;
+		box-shadow: 1px 0px 20px 1px grey;
+		transform: translateX(-9rem);
+		z-index: 100;
+    	position: relative;
+    	transition-duration: 0.2s;
+	}
+
+	menu.opened ul {
+		transform: translateX(0);
+	}
+
+
+	.menu-icon {
+		background: url("./menu.svg") center center;
+		background-repeat: no-repeat;
+		height: 2rem;
+		width: 2rem;
+		top: 0.5rem;
+	    left: 0.5rem;
+	    position: absolute;
+	}
 }
