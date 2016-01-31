@@ -1,7 +1,6 @@
 html {
 	min-height: 100%;
-	font-size: 14px;
-	font-family: calibri;
+	font-family: lucida sans unicode,lucida grande,sans-serif;
     -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth; // Added in from answer from Felix
     overflow-x: scroll;
@@ -11,6 +10,7 @@ body {
 	min-height: 100%;
 	background-color: #f9fbfa;
     transition-duration: 0.2s;
+	background-color: whitesmoke;
 }
 
 menu {
@@ -46,26 +46,25 @@ menu a:hover {
 }
 
 section {
-	padding: 1rem;
-    transition-duration: 0.2s;
+	margin: 0 3rem 3rem 3rem;
+	padding-top: 1.5rem;
+	border-top: 1px solid silver; /*#79be74*/
 }
 
-section:nth-child(odd) {
-	background-color: #d7d0c4;
-}
-
-section:nth-child(odd) h1 {
-	color: #e46c59;
-}
-
-section:nth-child(even) {
-	background-color: whitesmoke;
+#contacts {
+	border-left: 1px solid silver;
+	border-right: 1px solid silver;
+	border-bottom: 1px solid silver;
+	padding-bottom: 2rem;
+	background-color: #e5e5e5;
 }
 
 section > h1 {
     font-weight: bold;
-    font-size: xx-large;
-    color: #fac778;
+    font-size: x-large;
+    color: black;
+    text-align: center;
+    padding-bottom: 1.5rem;
 }
 
 section > header {
@@ -85,11 +84,243 @@ section h3 {
     text-align: center;
 }
 
-#location-map {
-	height: 600px;
-	width: 800px;
-	margin: 0 auto;
+section h4 {
+	font-weight: bold;
+	font-size: 20px;
+	padding-bottom: 0.5rem;
 }
+
+#location-map {
+	height: 300px;
+	width: 400px;
+	margin: 0 auto;
+	margin-bottom: 1rem;
+}
+
+#agenda {
+	text-align: center;
+}
+
+#agenda img {
+	height: 300px;
+	width: 500px;
+	margin-bottom: 1rem;
+	margin-top: 2rem;
+	border-radius: 50%;
+}
+
+#rsvp img {
+	height: 50px;
+	width: 90px;
+	margin-bottom: 1rem;
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+#transportation .transportation-methods {
+	display: -ms-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: space-around;
+    -ms-flex-line-pack: distribute;
+    align-content: space-around;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.transportation-method.plane:before {
+	background: url("./plane.svg");
+	content: "";
+	background-position: center center;
+	top: 0;
+	width: 100%;
+	left:0;
+	background-repeat: no-repeat;
+	height:3rem;
+	position: absolute;
+	background-size: 3rem 3rem;
+}
+
+.transportation-method.car:before {
+	background: url("./car.svg");
+	content: "";
+	background-position: center center;
+	top: 0;
+	width: 100%;
+	left:0;
+	background-repeat: no-repeat;
+	height:3rem;
+	position: absolute;
+	background-size: 3rem 3rem;
+}
+
+.transportation-method.train:before {
+	background: url("./train.svg");
+	content: "";
+	background-position: center center;
+	top: 0;
+	width: 100%;
+	left:0;
+	background-repeat: no-repeat;
+	height:3rem;
+	position: absolute;
+	background-size: 3rem 3rem;
+}
+
+.transportation-method {
+	width: 33%;
+	text-align: center;
+	padding-top: 4rem;
+	position: relative;
+}
+
+.flex-item:nth-child(1) {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+
+    }
+
+.flex-item:nth-child(1) {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+}
+
+#accommodation .accommodation-methods {
+	display: -ms-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: space-around;
+    -ms-flex-line-pack: distribute;
+    align-content: space-around;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.accommodation-method.onsite:before {
+	background: url("./tent.svg");
+	content: "";
+	background-position: center center;
+	top: 0;
+	width: 100%;
+	left:0;
+	background-repeat: no-repeat;
+	height:3rem;
+	position: absolute;
+	background-size: 3rem 3rem;
+}
+
+.accommodation-method.hotel:before {
+	background: url("./hotel.svg");
+	content: "";
+	background-position: center center;
+	top: 0;
+	width: 100%;
+	left:0;
+	background-repeat: no-repeat;
+	height:3rem;
+	position: absolute;
+	background-size: 3rem 3rem;
+}
+
+.accommodation-method {
+	width: 50%;
+	text-align: center;
+	padding-top: 4rem;
+	position: relative;
+}
+
+#good-to-know .good-to-know-methods {
+	display: -ms-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: space-around;
+    -ms-flex-line-pack: distribute;
+    align-content: space-around;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.good-to-know-method.present:before {
+	background: url("./present.svg");
+	content: "";
+	background-position: center center;
+	top: 0;
+	width: 100%;
+	left:0;
+	background-repeat: no-repeat;
+	height:3rem;
+	position: absolute;
+	background-size: 3rem 3rem;
+}
+
+.good-to-know-method.clothes:before {
+	background: url("./shirt.svg");
+	content: "";
+	background-position: center center;
+	top: 0;
+	width: 100%;
+	left:0;
+	background-repeat: no-repeat;
+	height:3rem;
+	position: absolute;
+	background-size: 3rem 3rem;
+}
+
+.good-to-know-method {
+	width: 50%;
+	text-align: center;
+	padding-top: 4rem;
+	position: relative;
+}
+
+
 
 form .left-side {
 	display: inline-block;
@@ -114,8 +345,24 @@ form input:required:invalid {
 	border: 1px solid red;
 }
 
-p {
-	text: left;
+.contact, .accommodation {
+	width: 50%;
+	display: inline-block;
+	text-align: center;
+}
+
+.contact:nth-child(2),
+.accommodation:nth-child(2) {
+	float: left;
+}
+
+#location {
+	text-align: center;
+}
+
+#location img {
+	width: 600px;
+	height: 400px;
 }
 
 @media (max-width: 600px) {
@@ -143,7 +390,6 @@ p {
 	menu.opened ul {
 		transform: translateX(0);
 	}
-
 
 	.menu-icon {
 		background: url("./menu.svg") center center;
