@@ -25,6 +25,10 @@
 			map: map,
 			title: 'Maison :)'
 		});
+
+		document.getElementById('rsvpForm').addEventListener('submit', function (event) {
+		    alert("Merci !")
+		})
 	};
 
 	document.addEventListener("DOMContentLoaded", function() {

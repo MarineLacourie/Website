@@ -15,9 +15,10 @@
             <li><a href="#location">LIEU</a></li>
             <li><a href="#transportation">TRANSPORTS</a></li>
             <li><a href="#accommodation">HEBERGEMENTS</a></li>
+            <li><a href="#rsvp">PRESENCE</a></li>
             <li><a href="#contacts">CONTACTS</a></li>
         </ul>
-                <div class="menu-icon"></div>
+        <div class="menu-icon"></div>
     </menu>
     <section id="home">
         <header>
@@ -48,6 +49,50 @@
     <section id="accommodation">
         <h1>Hebergement</h1>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum vitae lorem nec auctor. Aenean rhoncus, ante ac sollicitudin blandit, enim nunc fringilla orci, vel porttitor mauris enim at purus. Nunc ac ullamcorper purus, non semper nisi. Aliquam et nunc malesuada, mattis lectus sit amet, euismod risus. Integer rhoncus pellentesque luctus. Fusce enim elit, feugiat ut eros ac, congue fringilla sem. Maecenas luctus, libero sit amet tincidunt rhoncus, turpis mauris vestibulum ligula, quis luctus erat diam in sem. Vestibulum dictum facilisis aliquet.
+    </section>
+    <section id="rsvp">
+        <h1>Presence</h1>
+        <form id="rsvpForm" action="mailto:marine.lacourie@gmail.com" method="post" enctype="text/plain">
+            <div>
+                <label class="left-side" for="lastname">Nom</label>
+                <input type="text" id="lastname"required></label>
+            </div>
+            <div>
+                <label class="left-side" for="name">Prenom</label>
+                <input type="text" id="name"required></label>
+            </div>
+            <div>
+                <label class="left-side">Fete</label>
+                <label><input type="radio" name="fete" value="oui" required  checked="checked">Oui</label>
+                <label><input type="radio" name="fete" value="oui" required>Non</label>
+            </div>
+            <div>
+                <label class="left-side" for="no-adults">Nombre adultes</label>
+                <input type="text" id="no-adults" required></label>
+            </div>
+            <div>
+                <label class="left-side" for="no-children">Nombre Enfants</label>
+                <input type="text" id="no-children" required></label>
+            </div>
+            <div>
+                <label class="left-side">Nuit (tente dans le jardin)</label>
+                <label><input type="radio" name="night" value="oui" required>Oui</label>
+                <label><input type="radio" name="night" value="non" required  checked="checked">Non</label>
+            </div>
+            <div>
+                <label class="left-side" for="night-no-adults">Nombre adultes</label>
+                <input type="text" id="night-no-adults" required></label>
+            </div>
+            <div>
+                <label class="left-side" for="night-no-children">Nombre Enfants</label>
+                <input type="text" id="night-no-children" required></label>
+            </div>
+            <div>
+                <label class="left-side" for="comments">Commentaires</label>
+                <textarea id="comments"></textarea>
+            </div>
+        </form>
+        <button type="submit" form="rsvpForm">Envoyer</button>
     </section>
     <section id="contacts">
         <h1>Contacts</h1>

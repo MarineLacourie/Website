@@ -19,7 +19,8 @@ menu {
 	text-align: center;
 	position: fixed;
     width: 100%;
-    font-weight: bold;	
+    font-weight: bold;
+	z-index: 100;
 }
 
 menu li {
@@ -88,6 +89,29 @@ section h3 {
 	height: 600px;
 	width: 800px;
 	margin: 0 auto;
+}
+
+form .left-side {
+	display: inline-block;
+	width: 165px;
+}
+
+form > div {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+form input[type="text"], form textarea {
+	width: 165px;
+	max-width: 165px;
+}
+
+form input:required:valid {
+	border: 1px solid green;
+}
+
+form input:required:invalid {
+	border: 1px solid red;
 }
 
 p {
