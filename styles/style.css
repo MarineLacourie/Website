@@ -51,6 +51,15 @@ section {
 	border-top: 1px solid silver; /*#79be74*/
 }
 
+#rsvp .left-side {
+	width: 130px;
+	display: inline-block;
+}
+
+#rsvp input[type="number"] {
+	width: 35px;
+}
+
 #contacts {
 	border-left: 1px solid silver;
 	border-right: 1px solid silver;
@@ -69,7 +78,7 @@ section > h1 {
 
 section > header {
 	margin: 2rem;
-	color: #e46c59;
+	color: #67A6A6; /*#e46c59*/
 }
 
 section h2 {
