@@ -46,9 +46,11 @@ menu a:hover {
 }
 
 section {
-	margin: 0 3rem 3rem 3rem;
+	margin: 0 auto;
 	padding-top: 1.5rem;
 	border-top: 1px solid silver; /*#79be74*/
+	max-width: 800px;
+	padding-bottom: 4rem;
 }
 
 #rsvp .left-side {
@@ -68,12 +70,22 @@ section {
 	background-color: #e5e5e5;
 }
 
+p {
+	margin-top: 2rem;
+	text-align: justify;
+}
+
 section > h1 {
     font-weight: bold;
     font-size: x-large;
     color: black;
     text-align: center;
     padding-bottom: 1.5rem;
+    color: #e46c59;
+}
+
+.names {
+	font-size: 50px;
 }
 
 section > header {
@@ -111,8 +123,8 @@ section h4 {
 }
 
 #agenda img {
-	height: 300px;
-	width: 500px;
+	height: 450px;
+	width: 100%;
 	margin-bottom: 1rem;
 	margin-top: 2rem;
 	border-radius: 50%;
@@ -241,6 +253,13 @@ section h4 {
     align-items: flex-start;
 }
 
+.good-to-know-method li,
+.accommodation-method li {
+	text-align: justify;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
 .accommodation-method.onsite:before {
 	background: url("./tent.svg");
 	content: "";
@@ -272,6 +291,31 @@ section h4 {
 	text-align: center;
 	padding-top: 4rem;
 	position: relative;
+}
+
+.accommodation-method li + li {
+	margin-top: 1rem;
+}
+
+.covoiturage {
+	padding-left: 2rem;
+}
+
+.covoiturage:before {
+	content: "";
+	left: 0;
+	background-image: url("./facebook.png");
+	padding-left: 2rem;
+    background-position: center center;
+    background-size: 100%;
+}
+
+input[type="submit"] {
+	background-color: #e46c59;
+	border: none;
+	padding: 0.5rem;
+	color: white;
+	border-radius: 0.3rem;
 }
 
 #good-to-know .good-to-know-methods {
@@ -394,6 +438,15 @@ form input:required:invalid {
 		z-index: 100;
     	position: relative;
     	transition-duration: 0.2s;
+	}
+
+	section {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	menu > ul > li {
+		width: 100%;
 	}
 
 	menu.opened ul {
