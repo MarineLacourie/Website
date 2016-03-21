@@ -1,6 +1,6 @@
 html {
 	min-height: 100%;
-	font-family: lucida sans unicode,lucida grande,sans-serif;
+	font-family: Souvenir Lt BT; /*Gill Sans or Chaucer or lucida sans unicode,lucida grande,sans-serif*/
     -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth; // Added in from answer from Felix
     overflow-x: scroll;
@@ -15,7 +15,7 @@ body {
 
 menu {
 	height: 2.5rem;
-	background-color: #79be74; /*#79be74*/
+	background-color: #79be74; 
 	text-align: center;
 	position: fixed;
     width: 100%;
@@ -81,7 +81,7 @@ section > h1 {
     color: black;
     text-align: center;
     padding-bottom: 1.5rem;
-    color: #e46c59;
+    color: #79be74; /*#e46c59*/
 }
 
 .names {
@@ -123,11 +123,11 @@ section h4 {
 }
 
 #agenda img {
-	height: 300px;
-	width: 65%;
-	margin-bottom: 1rem;
-	margin-top: 2rem;
-	border-radius: 50%;
+	height: 270px;
+	width: 100%;
+	margin-bottom: 0rem;
+	margin-top: 0rem;
+	/*border-radius: 50%;*/
 }
 
 #rsvp img {
@@ -311,7 +311,7 @@ section h4 {
 }
 
 input[type="submit"] {
-	background-color: #e46c59;
+	background-color: #79be74; /*#e46c59*/
 	border: none;
 	padding: 0.5rem;
 	color: white;
