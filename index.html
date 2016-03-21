@@ -1,3 +1,18 @@
+<!-- TO DO :
+ - Boutton Home ne fonctionne pas
+ - Verifier que formulaires de RSVP fonctionne
+ - Mettre le menu (couleur verte) à la largeur de la page dessous (eg 800px)
+
+ En mode Mobile:
+ - Photo pas responsive
+ - Reduire la hauteur du menu quand deployé
+ - Faire en sorte que les items dans les parties soient les 1 en dessous des autres sur petit device
+ - Reduire taille du HEAD pour ne pas que ca prenne toute la page du device
+ - Menu apparait quand on clique n'importe où sur la page
+  -->
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -39,6 +54,7 @@
             <h3>LEUR MARIAGE</h3>
             <h2>LE 27 AOUT 2016 | 18h00 | RISCLE</h2> 
         </header>
+
         <img src="./styles/nous.jpg">
         <p>Comme vous le savez déjà, nous nous sommes mariés à Singapour, mais nous le serons réellement quans nous l'aurons feté avec vous !</p>
         <p>Retrouvez les informations complémentaires sur le groupe Facebook créé pour l'occasion : <a href="https://www.facebook.com/groups/444768839066759/" target="_blank">Marine & Axel party</a></p>
@@ -50,7 +66,8 @@
     </section> -->
     <section id="rsvp">
         <!-- <h1>RSVP</h1> -->
-        <img src="./styles/rsvp.jpg">
+        <!-- <img src="./styles/rsvp.jpg"> -->
+        <h1>RSVP</h1>
         <form action="emailSender.php" method="post">
             <div>
                 <label class="left-side" for="lastname">Nom</label>
@@ -102,10 +119,11 @@
             <input type="Submit" value="Envoyer">
         </form>
         <!-- Les formulaires PHP, c'est vraiment trop long à faire et ont eu raison de la patience d'Axel :) -->
-        <p>Afin de nous aider à prévoir les repas, on vous remercie de bien vouloir nous envoyer votre intention de présence avant le 30 avril via le formulaire ci-dessus ou par e-mail.</p>
-        <ul>
-            <li>Pour les personnes arrivant de loin, merci si possible de nous préciser quand vous arriverez et repartirez pour que l'on vous prévoit dans les repas.</li>
-        </ul>
+        <p>Quelques petites précisions...</p>
+        <p>Afin de nous aider à prévoir les repas, on vous remercie de bien vouloir nous envoyer réponse avant le 30 avril via le formulaire ci-dessus ou par e-mail.</p>
+        <p> Les conjoints sont les bienvenus, ainsi que les enfants et les animaux dans la mesure où nous sommes prévenus.
+        <p>Attention : nous tenons juste à préciser que la fete est organisée autour d'une maison en rénovation, et qu'il n'y a pas de barrière entourrant le terrain.</p>
+        <p>Pour les personnes arrivant de loin, merci si possible de nous préciser quand vous arriverez et repartirez pour que l'on vous prévoit dans les repas.</p>
         <p>Il sera bien sûr possible de modifier votre réponse, et de nous confirmer votre présence avant le 14 juillet (facile a retenir comme date, non ? :) ).</p>
     </section>
 
@@ -114,9 +132,12 @@
         <!-- <div id="location-map"></div> -->
         <div class="transportation-methods">
             <ul class="transportation-method car">
+                <li>Adresse :</li>
                 <li>Domaine de l'Archerot</li>
                 <li>32 400 RISCLE</li>
-                <li>Coordonnees GPS : 43.632826, -0.117326</li>
+                <!-- TO DO : il faudrait un espace la  -->
+                <li>Coordonnees GPS :</li>
+                <li>43.632826, -0.117326</li>
 
             </ul>
             <ul class="transportation-method train">
@@ -148,7 +169,7 @@
             </ul>
             <ul class="accommodation-method hotel">
                 <li>Pour louer un logement dans les environs, vous pouvez consulter le site de <a href="http://www.tourisme-armagnacadour.fr/prestataires/categories/hebergements">l'office de tourisme de Riscle</a></li>
-                <li>Même si ce n'est pas le coin le plus touristique de France, les logements sont complets assez tot dans la région, n'hesitez pas à réserver au plus tôt.</li>
+                <li>Même si ce n'est pas le coin le plus touristique de France, les logements sont complets assez tot dans la région, n'hésitez pas à réserver au plus tôt.</li>
             </ul>
         </div>
     </section>
