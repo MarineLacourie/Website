@@ -42,7 +42,7 @@ menu a:hover {
 }
 
 #home {
-	padding-top: 3.5rem;
+	/*padding-top: 3.5rem;*/
 }
 
 section {
@@ -118,11 +118,11 @@ section h4 {
 	margin-bottom: 1rem;
 }
 
-#agenda {
+#home {
 	text-align: center;
 }
 
-#agenda img {
+#home img {
 	/*height: 70%; pas necessaire ?*/
 	width: 100%;
 	margin-bottom: 0rem;
