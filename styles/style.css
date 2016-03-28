@@ -1,6 +1,6 @@
 html {
 	min-height: 100%;
-	font-family: Souvenir Lt BT; /*Gill Sans or Chaucer or lucida sans unicode,lucida grande,sans-serif*/
+	font-family: Courier; /* If possible, I would like Ubuntu font family. Georgia or Gill Sans or Chaucer or lucida sans unicode,lucida grande,sans-serif*/
     -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth; // Added in from answer from Felix
     overflow-x: scroll;
@@ -21,6 +21,7 @@ menu {
     width: 100%;
     font-weight: bold;
 	z-index: 100;
+	font-family: Palatino Linotype; /*Courier New*/
 }
 
 menu li {
@@ -82,6 +83,7 @@ section > h1 {
     text-align: center;
     padding-bottom: 1.5rem;
     color: #79be74; /*#e46c59*/
+    font-family: Palatino Linotype; /*Courier New*/
 }
 
 .names {
@@ -97,6 +99,7 @@ section h2 {
     font-weight: bold;
     font-size: xx-large;
     text-align: center;
+    font-family: Palatino Linotype; /*Courier New*/
 }
 
 section h3 {
