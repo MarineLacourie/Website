@@ -42,16 +42,12 @@ menu a:hover {
     color: #e46c59;
 }
 
-#home {
-	/*padding-top: 3.5rem;*/
-}
-
 section {
 	margin: 0 auto;
 	padding-top: 1.5rem;
 	border-top: 1px solid silver; /*#79be74*/
 	max-width: 800px;
-	padding-bottom: 4rem;
+	padding-bottom: 1rem;
 }
 
 #rsvp .left-side {
@@ -123,6 +119,7 @@ section h4 {
 
 #home {
 	text-align: center;
+	border-top: none;
 }
 
 #home img {
@@ -131,6 +128,10 @@ section h4 {
 	margin-bottom: 0rem;
 	margin-top: 0rem;
 	/*border-radius: 50%;*/
+}
+
+#dayd {
+	border-top: none;
 }
 
 #rsvp img {
@@ -142,56 +143,21 @@ section h4 {
     margin-right: auto
 }
 
-#transportation .transportation-methods {
-	display: -ms-flexbox;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-align-content: space-around;
-    -ms-flex-line-pack: distribute;
-    align-content: space-around;
-    -webkit-align-items: flex-start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-}
-
 .transportation-method.plane:before {
 	background: url("./plane.svg");
-	content: "";
-	background-position: center center;
-	top: 0;
-	width: 100%;
-	left:0;
-	background-repeat: no-repeat;
-	height:3rem;
-	position: absolute;
-	background-size: 3rem 3rem;
 }
 
 .transportation-method.car:before {
 	background: url("./car.svg");
-	content: "";
-	background-position: center center;
-	top: 0;
-	width: 100%;
-	left:0;
-	background-repeat: no-repeat;
-	height:3rem;
-	position: absolute;
-	background-size: 3rem 3rem;
 }
 
 .transportation-method.train:before {
 	background: url("./train.svg");
+}
+
+.transportation-method.plane:before,
+.transportation-method.car:before,
+.transportation-method.train:before {
 	content: "";
 	background-position: center center;
 	top: 0;
@@ -200,7 +166,7 @@ section h4 {
 	background-repeat: no-repeat;
 	height:3rem;
 	position: absolute;
-	background-size: 3rem 3rem;
+	background-size: 3rem 3rem;	
 }
 
 .transportation-method {
@@ -219,22 +185,11 @@ section h4 {
     flex: 0 1 auto;
     -webkit-align-self: auto;
     -ms-flex-item-align: auto;
-    align-self: auto;
-
-    }
-
-.flex-item:nth-child(1) {
-    -webkit-order: 0;
-    -ms-flex-order: 0;
-    order: 0;
-    -webkit-flex: 0 1 auto;
-    -ms-flex: 0 1 auto;
-    flex: 0 1 auto;
-    -webkit-align-self: auto;
-    -ms-flex-item-align: auto;
 }
 
-#accommodation .accommodation-methods {
+#accommodation .accommodation-methods,
+#transportation .transportation-methods,
+#good-to-know .good-to-know-methods {
 	display: -ms-flexbox;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -263,21 +218,33 @@ section h4 {
 	padding-right: 2rem;
 }
 
+.good-to-know-method {
+	width: 50%;
+	text-align: center;
+	padding-top: 4rem;
+	position: relative;
+}
+
+.good-to-know-method.clothes:before {
+	background: url("./shirt.svg");
+}
+
 .accommodation-method.onsite:before {
 	background: url("./tent.svg");
-	content: "";
-	background-position: center center;
-	top: 0;
-	width: 100%;
-	left:0;
-	background-repeat: no-repeat;
-	height:3rem;
-	position: absolute;
-	background-size: 3rem 3rem;
 }
 
 .accommodation-method.hotel:before {
 	background: url("./hotel.svg");
+}
+
+.good-to-know-method.present:before {
+	background: url("./present.svg");
+}
+
+.accommodation-method.onsite:before,
+.good-to-know-method.present:before,
+.good-to-know-method.clothes:before,
+.accommodation-method.hotel:before {
 	content: "";
 	background-position: center center;
 	top: 0;
@@ -314,69 +281,13 @@ section h4 {
 }
 
 input[type="submit"] {
-	background-color: #79be74; /*#e46c59*/
+	background-color: #79be74;
 	border: none;
 	padding: 0.5rem;
 	color: white;
 	border-radius: 0.3rem;
+	margin-bottom: 1rem;
 }
-
-#good-to-know .good-to-know-methods {
-	display: -ms-flexbox;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-align-content: space-around;
-    -ms-flex-line-pack: distribute;
-    align-content: space-around;
-    -webkit-align-items: flex-start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-}
-
-.good-to-know-method.present:before {
-	background: url("./present.svg");
-	content: "";
-	background-position: center center;
-	top: 0;
-	width: 100%;
-	left:0;
-	background-repeat: no-repeat;
-	height:3rem;
-	position: absolute;
-	background-size: 3rem 3rem;
-}
-
-.good-to-know-method.clothes:before {
-	background: url("./shirt.svg");
-	content: "";
-	background-position: center center;
-	top: 0;
-	width: 100%;
-	left:0;
-	background-repeat: no-repeat;
-	height:3rem;
-	position: absolute;
-	background-size: 3rem 3rem;
-}
-
-.good-to-know-method {
-	width: 50%;
-	text-align: center;
-	padding-top: 4rem;
-	position: relative;
-}
-
-
 
 form .left-side {
 	display: inline-block;
@@ -401,6 +312,10 @@ form input:required:invalid {
 	border: 1px solid red;
 }
 
+form .form-comments {
+	height:50px;
+}
+
 .contact, .accommodation {
 	width: 50%;
 	display: inline-block;
@@ -423,46 +338,31 @@ form input:required:invalid {
 
 @media (max-width: 600px) {
 	menu {
-		position: fixed;
-		height:100%;
-		text-align: left;
-		width: 100%;
-		background-color: transparent;
+		display: none;
 	}
 
-	menu > ul {
-		display: inline-block;
-		width: 9rem;
-		background-color: #99cbba;
-		text-align: left;
-		height: 100%;
-		box-shadow: 1px 0px 20px 1px grey;
-		transform: translateX(-9rem);
-		z-index: 100;
-    	position: relative;
-    	transition-duration: 0.2s;
+	body {
+		padding: 1rem;
 	}
 
-	section {
-		padding-left: 1rem;
-		padding-right: 1rem;
+	.names {
+		font-size: 40px;
 	}
 
-	menu > ul > li {
-		width: 100%;
+	#accommodation .accommodation-methods,
+	#transportation .transportation-methods,
+	#good-to-know .good-to-know-methods {
+		flex-direction: column;
 	}
 
-	menu.opened ul {
-		transform: translateX(0);
+	.good-to-know-method,
+	.accommodation-method,
+	.transportation-method {
+		width:100%;
+		margin-bottom: 2rem;
 	}
 
-	.menu-icon {
-		background: url("./menu.svg") center center;
-		background-repeat: no-repeat;
-		height: 2rem;
-		width: 2rem;
-		top: 0.5rem;
-	    left: 0.5rem;
-	    position: absolute;
+	#transportation p {
+		text-align: initial;
 	}
 }

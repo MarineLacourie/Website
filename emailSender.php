@@ -9,12 +9,14 @@
     $sunday = $_POST['sunday'];
     $sundayChildren = $_POST['sunday-children'];
     $sundayAdults = $_POST['sunday-adults'];
+    $comments = $_POST['comments'];
 
     $messageToSend = "Nom : ".$name;
     $messageToSend .="\r\nEmail : ".$email;
     $messageToSend .="\r\nLastName : ".$lastname;
     $messageToSend .="\r\nSamedi : ".$saturday;
     $messageToSend .="\r\nSamedi Adults :".$saturdayAdults;
+    $messageToSend .="\r\nComments :".$comments;
    
     mail("marine.lacourie@gmail.com", "Mariage Registration", $messageToSend);
     header('Location: http://royer-bertrand.com/mariage/');
