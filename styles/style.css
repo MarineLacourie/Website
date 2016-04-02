@@ -345,8 +345,8 @@ form .form-comments {
 		padding: 1rem;
 	}
 
-	.names {
-		font-size: 40px;
+	h2, .names {
+		font-size: 35px;
 	}
 
 	#accommodation .accommodation-methods,
