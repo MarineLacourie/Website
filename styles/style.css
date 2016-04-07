@@ -43,7 +43,7 @@ menu a:hover {
 }
 
 section a:link {
-    color: #79be74;
+    color: black;
 }
 
 section a:visited { 
@@ -131,7 +131,7 @@ section h4 {
 
 .importantText {
 	font-weight: bold;
-	color: #e46c59;
+	color: #60985c;
 }
 
 #location-map {
