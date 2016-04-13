@@ -334,7 +334,7 @@ form input:required:valid {
 }
 
 form input:required:invalid {
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 }
 
 form .form-comments {
