@@ -21,7 +21,7 @@
     $messageToSend .="\r\nNombre adultes samedi soir : ".$saturdayAdults;
     $messageToSend .="\r\nNombre enfants samedi soir : ".$saturdayChildren;
     $messageToSend .="\r\nPrénoms samedi soir : ".$namesSaturday;
-    $messageToSend .="\r\nNombre tentes :".$saturdayNight;
+    $messageToSend .="\r\nNombre tentes : ".$saturdayNight;
     $messageToSend .="\r\n---------------------";
     $messageToSend .="\r\nPrésence dimanche midi : ".$sunday;
     $messageToSend .="\r\nNombre adultes dimanche midi : ".$sundayAdults;
@@ -30,6 +30,6 @@
     $messageToSend .="\r\n---------------------";
     $messageToSend .="\r\nCommentaires : ".$comments;
    
-    mail("marine.lacourie@gmail.com", "Mariage Registration", $messageToSend);
+    mail("marine.lacourie@gmail.com", "Mariage RSVP", $messageToSend);
     header('Location: http://royer-bertrand.com/mariage/');
 ?>
